@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:gravity="center_horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="您的设备"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="info"
+			android:layout_marginTop="3dp"
+			android:id="@+id/mainTextView1"
+			android:gravity="center_horizontal"
+			android:background="#F3F1D7"
+			android:textColor="#3F51B5"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="去除原生叹号"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="点一下去除叹号"
+			android:textColor="#3F51B5"
+			android:layout_marginTop="3dp"
+			android:onClick="RemovePoint"
+			android:textStyle="bold"
+			android:background="#F3F1D7"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="亮度调节(亮度值)"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"
+			android:id="@+id/mainTextView2"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Root模式"
+			android:layout_marginTop="3dp"
+			android:background="#F3F1D7"
+			android:padding="10dp"
+			android:id="@+id/mainCheckBox1"/>
+
+		<SeekBar
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="3dp"
+			android:padding="15dp"
+			android:thumbTint="#3F51B5"
+			android:background="#F3F1D7"
+			android:id="@+id/mainSeekBar1"
+			android:max="255"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/mainLinearLayout1"
+			android:visibility="gone">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="50"
+				android:layout_weight="1.0"
+				android:background="#F3F1D7"
+				android:textColor="#3F51B5"
+				android:onClick="one"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="100"
+				android:layout_weight="1.0"
+				android:background="#F3F1D7"
+				android:textColor="#3F51B5"
+				android:onClick="two"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="200"
+				android:layout_weight="1.0"
+				android:background="#F3F1D7"
+				android:textColor="#3F51B5"
+				android:onClick="three"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="400"
+				android:layout_weight="1.0"
+				android:background="#F3F1D7"
+				android:textColor="#3F51B5"
+				android:onClick="four"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="原生导航栏(状态)"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"
+			android:id="@+id/mainTextView3"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="3dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="关闭"
+				android:layout_weight="1.0"
+				android:textColor="#3F51B5"
+				android:textStyle="bold"
+				android:background="#F3F1D7"
+				android:onClick="off"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="开启"
+				android:layout_weight="1.0"
+				android:textColor="#3F51B5"
+				android:textStyle="bold"
+				android:background="#F3F1D7"
+				android:onClick="on"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="小米5X卡刷包"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="字体卡刷包"
+			android:background="#F3F1D7"
+			android:layout_marginTop="3dp"
+			android:onClick="font"
+			android:textColor="#3F51B5"
+			android:textStyle="bold"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="刷机包"
+			android:background="#F3F1D7"
+			android:layout_marginTop="3dp"
+			android:textColor="#3F51B5"
+			android:textStyle="bold"
+			android:onClick="bao"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="类原生自带录屏"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="录屏文件管理"
+			android:background="#F3F1D7"
+			android:layout_marginTop="3dp"
+			android:onClick="vo"
+			android:textColor="#3F51B5"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="其他"
+			android:layout_marginTop="10dp"
+			android:textColor="#E91E63"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="开启网络ADB"
+			android:background="#F3F1D7"
+			android:layout_marginTop="3dp"
+			android:onClick="adb"
+			android:textColor="#3F51B5"
+			android:textStyle="bold"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="管理Google套件"
+			android:background="#F3F1D7"
+			android:layout_marginTop="3dp"
+			android:onClick="Google"
+			android:textColor="#3F51B5"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Copyright ©2017-2018 Someone. All rights reserved."
+			android:layout_marginTop="20dp"
+			android:textColor="#E91E63"
+			android:textSize="10sp"
+			android:onClick="about"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="微白io@dabai2017"
+			android:layout_marginTop="2dp"
+			android:textColor="#E91E63"
+			android:textSize="10sp"
+			android:paddingBottom="20dp"
+			android:onClick="about"
+			android:gravity="center_horizontal"/>
+
+	</LinearLayout>
+
+</ScrollView>
+
